@@ -1,9 +1,9 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "Nomic AI",
   "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "dark": "/logo/nomic_white.svg",
+    "light": "/logo/nomic_logo.svg"
   },
   "favicon": "/favicon.svg",
   "colors": {
@@ -18,14 +18,22 @@
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "url": "mailto:support@nomic.ai"
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "name": "Visit Your Atlas Dashboard",
+    "url": "https://atlas.nomic.ai/data"
   },
   "tabs": [
+    {
+      "name": "Guides",
+      "url": "guides"
+    },
+    {
+      "name": "Cookbook",
+      "url": "cookbook"
+    },
     {
       "name": "API Reference",
       "url": "api-reference"
@@ -33,39 +41,34 @@
   ],
   "anchors": [
     {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
+      "name": "Nomic Discord",
+      "icon": "discord",
+      "url": "https://discord.com/invite/nomic-ai-1076964370942267462"
     },
     {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
-    },
-    {
-      "name": "Blog",
+      "name": "Nomic Blog",
       "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "url": "https://blog.nomic.ai"
     }
   ],
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "Nomic Atlas",
       "pages": [
         "introduction",
-        "quickstart",
-        "development"
+        "why_atlas",
+        "quickstart"
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Resources",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "resources/models",
+        "resources/concepts",
+        "resources/images",
+        "resources/settings",
+        "resources/FAQ",
+        "resources/reusable-snippets"
       ]
     },
     {
@@ -84,8 +87,8 @@
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "x": "https://x.com/nomic_ai",
+    "github": "https://github.com/nomic-ai/nomic",
+    "linkedin": "https://www.linkedin.com/company/81840835"
   }
 }
