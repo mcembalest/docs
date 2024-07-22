@@ -1,88 +1,60 @@
 ---
 title: 'Models'
-description: 'Text, title, and styling in standard markdown'
-icon: 'text-size'
+description: 'Nomic Models'
+icon: 'sparkles'
 ---
 
-## Titles
+# Text
 
-Best used for section headers.
+Nomic Atlas natively supports the following text embeddings models:
 
-```md
-## Titles
-```
+| Model | Description | Context Length | Dimension | MTEB |
+| ----- | ----------- | -------------- | --------- | ---- |
+| [nomic-embed-text-v1] | Nomic Embed specialized for retrieval, similarity, clustering and classification. | 8192 | 768| 62.39 |
+| [nomic-embed-text-v1.5] | Nomic Embed with support for variable embedding size and specialized for retrieval, similarity, clustering and classification. Recommended output sizes are 768, 512, 256, 128 and 64. | 8192 | 768| 62.28 |
+| | |  | 512 | 61.96 |
+| | |  | 256 | 61.04 |
+| | |  | 128 | 59.34 |
+| | |  | 64 | 56.10 |
 
-### Subtitles
+[nomic-embed-text-v1]: https://blog.nomic.ai/posts/nomic-embed-text-v1
+[nomic-embed-text-v1.5]: https://blog.nomic.ai/posts/nomic-embed-matryoshka
 
-Best use to subsection headers.
+Visit the [API Reference](/reference/endpoints/nomic-embed-text.mdx) for use details.
 
-```md
-### Subtitles
-```
+*Model quality degrades with decreased output dimensionality. [Learn more](https://blog.nomic.ai/posts/nomic-embed-matryoshka).
 
-<Tip>
+### Embedding task types
 
-Each **title** and **subtitle** creates an anchor and also shows up on the table of contents on the right.
+There are four task types for Nomic Embed:
+- **search_query**: A query for retrieval.
+- **search_document**: A document for retrieval, or a query for similarity search.
+- **classification**: Used for classification tasks.
+- **clustering**: Results in very high linear separability.
 
-</Tip>
+# Image
 
-## Text Formatting
+Nomic Atlas natively supports the following image embeddings models:
 
-We support most markdown formatting. Simply add `**`, `_`, or `~` around text to format it.
+| Model | Description |  Dimension | Imagenet 0-shot |
+| ----- | ----------- |  --------- | --------------- |
+| [nomic-embed-vision-v1] | Vision embedding model aligned to Nomic Embed Text v1 | 768 | 70.7 |
+| [nomic-embed-vision-v1.5] | Vision embedding model aligned to Nomic Embed Text v1.5. | 768 | 71.0
 
-| Style         | How to write it   | Result          |
-| ------------- | ----------------- | --------------- |
-| Bold          | `**bold**`        | **bold**        |
-| Italic        | `_italic_`        | _italic_        |
-| Strikethrough | `~strikethrough~` | ~strikethrough~ |
+[nomic-embed-vision-v1]: https://blog.nomic.ai/posts/nomic-embed-vision
+[nomic-embed-vision-v1.5]: https://blog.nomic.ai/posts/nomic-embed-vision
 
-You can combine these. For example, write `**_bold and italic_**` to get **_bold and italic_** text.
+Visit the [API Reference](/reference/endpoints/nomic-embed-vision.mdx) for use details.
 
-You need to use HTML to write superscript and subscript text. That is, add `<sup>` or `<sub>` around your text.
+*Model quality degrades with decreased output dimensionality. [Learn more](https://blog.nomic.ai/posts/nomic-embed-matryoshka).
 
-| Text Size   | How to write it          | Result                 |
-| ----------- | ------------------------ | ---------------------- |
-| Superscript | `<sup>superscript</sup>` | <sup>superscript</sup> |
-| Subscript   | `<sub>subscript</sub>`   | <sub>subscript</sub>   |
+# Projection / Dimensionality reduction
 
-## Linking to Pages
+Nomic Atlas supports the following dimensionality reduction algorithms:
 
-You can add a link by wrapping text in `[]()`. You would write `[link to google](https://google.com)` to [link to google](https://google.com).
+| Model | Description | Run time|
+| ------- | ----------- | --------  |
+| nomic-project-v1 | Nomic's flagship dimensionality reduction algorithm that projects high-dimensional embeddings to 2D. | 5 minutes (1M 1024d) |
 
-Links to pages in your docs need to be root-relative. Basically, you should include the entire folder path. For example, `[link to text](/writing-content/text)` links to the page "Text" in our components section.
 
-Relative links like `[link to text](../text)` will open slower because we cannot optimize them as easily.
-
-## Blockquotes
-
-### Singleline
-
-To create a blockquote, add a `>` in front of a paragraph.
-
-> Dorothy followed her through many of the beautiful rooms in her castle.
-
-```md
-> Dorothy followed her through many of the beautiful rooms in her castle.
-```
-
-### Multiline
-
-> Dorothy followed her through many of the beautiful rooms in her castle.
->
-> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
-
-```md
-> Dorothy followed her through many of the beautiful rooms in her castle.
->
-> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
-```
-
-### LaTeX
-
-Mintlify supports [LaTeX](https://www.latex-project.org) through the Latex component.
-
-<Latex>8 x (vk x H1 - H2) = (0,1)</Latex>
-
-```md
-<Latex>8 x (vk x H1 - H2) = (0,1)</Latex>
-```
+Visit the [API Reference](/reference/python-api/overview.mdx) for use details.

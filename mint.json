@@ -33,9 +33,18 @@
     {
       "name": "Cookbook",
       "url": "cookbook"
+    },
+    {
+      "name": "API Reference",
+      "url": "api-reference"
     }
   ],
   "anchors": [
+    {
+      "name": "Nomic",
+      "icon": "house",
+      "url": "https://www.nomic.ai"
+    },
     {
       "name": "Nomic Discord",
       "icon": "discord",
@@ -45,6 +54,11 @@
       "name": "Nomic Blog",
       "icon": "newspaper",
       "url": "https://blog.nomic.ai"
+    },
+    {
+      "name": "Nomic GitHub",
+      "icon": "github",
+      "url": "https://github.com/nomic-ai"
     }
   ],
   "navigation": [
@@ -57,11 +71,34 @@
       ]
     },
     {
-      "group": "Atlas Guides",
+      "group": "Resources",
       "pages": [
-        "guides/quickstart_guide",
+        "resources/models",
+        "resources/FAQ"
+      ]
+    },
+    {
+      "group": "Atlas In The Browser",
+      "pages": [
+        "guides/upload_data",
         "guides/collaborative_data_tagging",
-        "guides/data_cleaning"
+        "guides/data_cleaning",
+        "guides/duplicate_detection",
+        "guides/image_datasets",
+        "guides/semantic_search",
+        "guides/topic_modelling"
+      ]
+    },
+    {
+      "group": "Atlas Python SDK",
+      "pages": [
+        "guides/atlas_python_sdk"
+      ]
+    },
+    {
+      "group": "Unstructured Data API",
+      "pages": [
+        "guides/unstructured_data_api"
       ]
     },
     {
@@ -71,11 +108,23 @@
         "cookbook/mapping_github_commits_with_atlas",
         "cookbook/mapping_reddit_comments_with_atlas"
       ]
+    },
+    {
+      "group": "Atlas API Documentation",
+      "pages": [
+        "api-reference/introduction"
+      ]
     }
   ],
   "footerSocials": {
     "x": "https://x.com/nomic_ai",
     "github": "https://github.com/nomic-ai",
     "linkedin": "https://www.linkedin.com/company/81840835"
+  },
+  "api": {
+    "baseUrl": "https://api-atlas.nomic.ai/v1", 
+    "auth": {
+      "method": "bearer"
+    }
   }
 }
