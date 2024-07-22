@@ -3,31 +3,23 @@ title: 'Quickstart'
 description: 'Start discovering structure and generating maps from your unstructured data'
 ---
 
-Storing data in Atlas:  
-<AccordionGroup>
-  <Accordion title="Drag & Drop" icon="chrome">
-    Add data to Atlas from browser
+# Getting Started
 
-  </Accordion>
+## Option 1: Drag+drop data in browser
+  Add data to Atlas from browser
+## Option 2: Python
 
-  <Accordion title="Python SDK" icon="python">
-    1. Install the Python client:
-    ```bash
-    pip install nomic
-    ```
+Call `map_data` from the Nomic Atlas python SDK to upload data to Atlas
 
-    2. Call the `map_data` function with your data to embed & any associated metadata:
+  ```bash
+  pip install nomic
+  ```
 
-    ```python
-    from nomic.atlas import map_data
+  ```python
+  from nomic.atlas import map_data
 
-    dataset_result = map_data(
-      data=data,
-      ...
-    )
-    ```
-  </Accordion>
-</AccordionGroup>
-
-## Log Into Atlas
-
+  dataset_result = map_data(
+    data=data,
+    ...
+  )
+  ```

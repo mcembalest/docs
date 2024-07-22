@@ -33,10 +33,6 @@
     {
       "name": "Cookbook",
       "url": "cookbook"
-    },
-    {
-      "name": "API Reference",
-      "url": "api-reference"
     }
   ],
   "anchors": [
@@ -61,34 +57,19 @@
       ]
     },
     {
-      "group": "Resources",
+      "group": "Atlas Guides",
       "pages": [
-        "resources/models",
-        "resources/concepts",
-        "resources/images",
-        "resources/settings",
-        "resources/FAQ",
-        "resources/reusable-snippets"
+        "guides/quickstart_guide",
+        "guides/collaborative_data_tagging",
+        "guides/data_cleaning"
       ]
     },
     {
-      "group": "Guides",
+      "group": "Atlas Cookbook",
       "pages": [
-        "guides/quickstart_guide"
-      ]
-    }
-    {
-      "group": "API Documentation",
-      "pages": [
-        "api-reference/introduction"
-      ]
-    },
-    {
-      "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "cookbook/quickstart_cookbook",
+        "cookbook/mapping_github_commits_with_atlas",
+        "cookbook/mapping_reddit_comments_with_atlas"
       ]
     }
   ],
