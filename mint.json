@@ -55,7 +55,7 @@
     {
       "group": "Nomic Atlas",
       "pages": [
-        "introduction",
+        "atlas",
         "why_atlas",
         "quickstart"
       ]
@@ -71,6 +71,12 @@
         "resources/reusable-snippets"
       ]
     },
+    {
+      "group": "Guides",
+      "pages": [
+        "guides/quickstart_guide"
+      ]
+    }
     {
       "group": "API Documentation",
       "pages": [
@@ -88,7 +94,7 @@
   ],
   "footerSocials": {
     "x": "https://x.com/nomic_ai",
-    "github": "https://github.com/nomic-ai/nomic",
+    "github": "https://github.com/nomic-ai",
     "linkedin": "https://www.linkedin.com/company/81840835"
   }
 }
