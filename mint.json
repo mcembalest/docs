@@ -25,6 +25,9 @@
     "name": "Visit Your Atlas Dashboard",
     "url": "https://atlas.nomic.ai/data"
   },
+  "primaryTab": {
+      "name": "Atlas Docs Home"
+  },
   "tabs": [
     {
       "name": "Atlas Academy",
@@ -39,8 +42,8 @@
       "url": "developer-guides"
     },
     {
-      "name": "Atlas Cookbook",
-      "url": "atlas-cookbook"
+      "name": "Account Management",
+      "url": "manage-account"
     },
     {
       "name": "API Reference",
@@ -71,64 +74,114 @@
   ],
   "navigation": [
     {
-      "group": "Atlas Documentation",
+      "group": "Atlas Docs Home",
       "pages": [
-        "atlas-documentation/start",
-        "atlas-documentation/quickstart",
-        "atlas-documentation/why_atlas",
-        "atlas-documentation/models",
-        "atlas-documentation/FAQ"
+        "home",
+        "quickstart",
+        "why_atlas",
+        "models",
+        "FAQ"
       ]
     },
     {
-      "group": "Atlas Academy",
+      "group": "Data",
       "pages": [
-        "atlas-academy/atlas_academy",
-        "atlas-academy/how_to_look_at_atlas_maps",
-        "atlas-academy/what_is_unstructured_data",
-        "atlas-academy/what_is_high_dimensional_data",
-        "atlas-academy/what_are_embeddings",
-        "atlas-academy/what_is_semantic_search",
-        "atlas-academy/what_is_natural_language_processing",
-        "atlas-academy/what_is_computer_vision",
-        "atlas-academy/what_are_multimodal_models"
+        "atlas-academy/data/data",
+        "atlas-academy/data/clusters",
+        "atlas-academy/data/high_dimensional_data",
+        "atlas-academy/data/structured_data",
+        "atlas-academy/data/unstructured_data"
       ]
     },
     {
-      "group": "Atlas User Guides",
+      "group": "Machine Learning",
       "pages": [
-        "user-guides/user_guides",
-        "user-guides/upload_data",
-        "user-guides/collaborating_in_atlas",
-        "user-guides/data_cleaning",
-        "user-guides/duplicate_detection",
-        "user-guides/image_datasets",
-        "user-guides/semantic_search",
-        "user-guides/topic_modelling"
+        "atlas-academy/machine-learning/embeddings",
+        "atlas-academy/machine-learning/natural_language_processing",
+        "atlas-academy/machine-learning/computer_vision",
+        "atlas-academy/machine-learning/multimodality",
+        "atlas-academy/machine-learning/semantic_search"
       ]
     },
     {
-      "group": "Atlas Python SDK",
+      "group": "Math",
       "pages": [
-        "developer-guides/atlas_python_sdk"
+        "atlas-academy/math/dimensions",
+        "atlas-academy/math/vectors"
       ]
     },
     {
-      "group": "Unstructured Data API",
+      "group": "Onboarding",
       "pages": [
-        "developer-guides/unstructured_data_api"
+        "user-guides/onboarding/upload_data",
+        "user-guides/onboarding/preview_data",
+        "user-guides/onboarding/view_map"
       ]
     },
     {
-      "group": "Atlas Cookbook",
+      "group": "Using Atlas",
       "pages": [
-        "atlas-cookbook/atlas_cookbook",
-        "atlas-cookbook/mapping_github_commits_with_atlas",
-        "atlas-cookbook/mapping_reddit_comments_with_atlas"
+        "user-guides/using-atlas/how_to_see",
+        "user-guides/using-atlas/edit_appearance",
+        "user-guides/using-atlas/select_data",
+        "user-guides/using-atlas/enhance_data",
+        "user-guides/using-atlas/export_data",
+        "user-guides/using-atlas/share_map"
       ]
     },
     {
-      "group": "Atlas API Documentation",
+      "group": "Tutorials",
+      "pages": [
+        "user-guides/tutorials/produce_beautiful_reports",
+        "user-guides/tutorials/clean_data",
+        "user-guides/tutorials/deduplicate_data",
+        "user-guides/tutorials/detect_topics_in_text",
+        "user-guides/tutorials/detect_characters_in_images",
+        "user-guides/tutorials/semantic_search"
+      ]
+    },
+    {
+      "group": "Cookbook",
+      "pages": [
+        "user-guides/user-cookbook/map_github_commits",
+        "user-guides/user-cookbook/map_reddit_comments",
+        "user-guides/user-cookbook/map_images_of_plant_and_animal_species"
+      ]
+    },
+    {
+      "group": "Usage",
+      "pages": [
+        "developer-guides/usage/atlas_python_sdk",
+        "developer-guides/usage/unstructured_data_api"
+      ]
+    },
+    {
+      "group": "Tutorials",
+      "pages": [
+        "developer-guides/tutorials/build_custom_classifiers"
+      ]
+    },
+    {
+      "group": "Cookbook",
+      "pages": [
+        "developer-guides/developer-cookbook/organize_ml_training_data",
+        "developer-guides/developer-cookbook/s3_sagemaker"
+      ]
+    },
+    {
+      "group": "Account Management",
+      "pages": [
+        "manage-account/sign_up",
+        "manage-account/login",
+        "manage-account/join_organization",
+        "manage-account/create_organization",
+        "manage-account/invite_collaborators",
+        "manage-account/permissions",
+        "manage-account/billing"
+      ]
+    },
+    {
+      "group": "API Reference",
       "pages": [
         "api-reference/introduction"
       ]
