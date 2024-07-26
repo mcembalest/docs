@@ -30,12 +30,12 @@
   },
   "tabs": [
     {
-      "name": "Atlas Academy",
-      "url": "atlas-academy"
-    },
-    {
       "name": "User Guides",
       "url": "user-guides"
+    },
+    {
+      "name": "Atlas Academy",
+      "url": "atlas-academy"
     },
     {
       "name": "Developer Guides",
@@ -84,6 +84,12 @@
       ]
     },
     {
+      "group": "Atlas",
+      "pages": [
+        "atlas-academy/atlas/what_is_atlas"
+      ]
+    },
+    {
       "group": "Data",
       "pages": [
         "atlas-academy/data/data",
@@ -108,6 +114,13 @@
       "pages": [
         "atlas-academy/math/dimensions",
         "atlas-academy/math/vectors"
+      ]
+    },
+    {
+      "group": "Nomic",
+      "pages": [
+        "atlas-academy/nomic/nomic_embed",
+        "atlas-academy/nomic/nomic_project"
       ]
     },
     {
@@ -143,29 +156,29 @@
     {
       "group": "Cookbook",
       "pages": [
-        "user-guides/user-cookbook/map_github_commits",
-        "user-guides/user-cookbook/map_reddit_comments",
         "user-guides/user-cookbook/map_images_of_plant_and_animal_species"
       ]
     },
     {
       "group": "Usage",
       "pages": [
-        "developer-guides/usage/atlas_python_sdk",
-        "developer-guides/usage/unstructured_data_api"
+        "developer-guides/atlas_python_sdk",
+        "developer-guides/unstructured_data_api"
       ]
     },
     {
       "group": "Tutorials",
       "pages": [
-        "developer-guides/tutorials/build_custom_classifiers"
+        "developer-guides/tutorials/build_custom_classifiers",
+        "developer-guides/tutorials/s3_sagemaker"
       ]
     },
     {
       "group": "Cookbook",
       "pages": [
         "developer-guides/developer-cookbook/organize_ml_training_data",
-        "developer-guides/developer-cookbook/s3_sagemaker"
+        "developer-guides/developer-cookbook/map_github_commits",
+        "developer-guides/developer-cookbook/map_reddit_comments"
       ]
     },
     {
