@@ -44,10 +44,6 @@
     {
       "name": "Account Management",
       "url": "manage-account"
-    },
-    {
-      "name": "API Reference",
-      "url": "api-reference"
     }
   ],
   "anchors": [
@@ -191,12 +187,6 @@
         "manage-account/invite_collaborators",
         "manage-account/permissions",
         "manage-account/billing"
-      ]
-    },
-    {
-      "group": "API Reference",
-      "pages": [
-        "api-reference/introduction"
       ]
     }
   ],

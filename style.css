@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap");
+
+:root {
+  --ifm-color-primary: #436544;
+  --ifm-color-primary-10: #E8F0E8;
+  --ifm-color-primary-dark: #436544;
+  --ifm-color-primary-darker: #3C593D;
+  --ifm-color-primary-darkest: #2B3C2C;
+  --ifm-color-primary-light: #80A881;
+  --ifm-color-primary-lighter: #ADC8AE;
+  --ifm-color-primary-lightest: #E8F0E8;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-font-family-base: "Space Grotesk";
+  --ifm-font-family-monospace: "Space Mono";
+  --ifm-font-family-serif: "Crimson Pro";
+  --ifm-footer-background-color: #436544;
+}
+
+a {
+  color: #5E895F
+}
+
+[data-theme="dark"] {
+  --ifm-color-primary: #436544;
+  --ifm-color-primary-dark: #436544;
+  --ifm-color-primary-darker: #3C593D;
+  --ifm-color-primary-darkest: #2B3C2C;
+  --ifm-color-primary-light: #80A881;
+  --ifm-color-primary-lighter: #ADC8AE;
+  --ifm-color-primary-lightest: #E8F0E8;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.font-semibold {
+  font-family: var(--ifm-font-family-base);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+button,
+input,
+a {
+  font-family: var(--ifm-font-family-base);
+}
+
+body {
+    background-color: var(--ifm-color-background);
+    color: var(--ifm-color-text);
+  }
